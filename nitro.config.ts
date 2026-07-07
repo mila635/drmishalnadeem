@@ -6,5 +6,8 @@ export default defineNitroConfig({
     dir: '.vercel/output',
     serverDir: '.vercel/output/functions/__server.func',
     publicDir: '.vercel/output/static'
+  },
+  runtimeConfig: {
+    // Add any runtime config here
   }
 });
