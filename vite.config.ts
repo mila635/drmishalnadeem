@@ -7,9 +7,7 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 export default defineConfig({
   plugins: [
     viteReact(),
-    tanstackStart({
-      // Remove any Lovable-specific options
-    }),
+    tanstackStart({}),
     nitro({
       preset: 'vercel'
     }),
