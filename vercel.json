@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": ".vercel/output/functions/__server.func/index.mjs",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": ".vercel/output/functions/__server.func/index.mjs"
+    }
+  ]
+}
