@@ -1,15 +1,6 @@
 {
   "version": 2,
-  "functions": {
-    ".vercel/output/functions/__server.func/index.mjs": {
-      "runtime": "nodejs22.x"
-    }
-  },
   "routes": [
-    {
-      "src": "/_nitro/(.*)",
-      "dest": "/.vercel/output/functions/__server.func/index.mjs"
-    },
     {
       "src": "/assets/(.*)",
       "headers": {
